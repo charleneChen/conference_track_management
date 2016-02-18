@@ -1,0 +1,35 @@
+How to run the project:
+
+Goes to the project lib/ directory
+
+run ruby main.rb
+
+Follow the instruction: 'Please input the file path of your test data (eg. ../input): '
+
+Input ../input as indicated in the given example
+
+Then, it will output all results
+
+
+Assumptions:
+
+Ruby version - ruby 2.2.2
+Ruby gemset - conference_track_management
+External library - rspec
+
+PS: test file 'input' contains extra information at the end of given test data for testing purpose
+
+
+
+Design:
+
+First, the project should be able to convert lines in the test file into Talk instances. Each line represent an instance of Talk
+Second, computes total time of all Talk instances. Given some constraints of Track, now computes the number of tracks that are needed
+
+Before adding talks to one track, the project should be able to select all possible talks with a given minutes
+Then, adding selected talks with given minutes to a track
+
+In order to ensure each track contains different talks, it is necessary to delete assigned talks of a track
+after this track is created and assigned some talks
+
+Finally, compute and print all tracks based on given constraints
